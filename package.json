@@ -9,7 +9,7 @@
   },
   "main": "./DateTime.js",
   "scripts": {
-    "build": "./node_modules/.bin/gulp.cmd",
+    "build": "../.bin/gulp",
     "test": "node node_modules/mocha/bin/mocha tests",
     "dev": "webpack-dev-server --config example/webpack.config.js --devtool eval --progress --colors --hot --content-base example",
     "postinstall": "npm run build"
@@ -27,7 +27,7 @@
   "peerDependencies": {
     "react": ">=0.13",
     "react-dom": ">=0.13",
-    "moment": ">=2.8.1"
+    "moment": ">=2.8.1",
   },
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "object-assign": "^3.0.0",
-    "react-onclickoutside": "^4.1.0"
+    "react-onclickoutside": "^4.1.0",
+    "gulp": "^3.9.0"
   }
 }
