@@ -142,7 +142,7 @@ var Datetime = React.createClass({
 			update = {}
 		;
 
-		if( nextProps.value != this.props.value ){
+		if( nextProps.value != this.props.value || nextProps.open != this.props.open ){
 			update = this.getStateFromProps( nextProps );
 		}
 		if ( formats.datetime !== this.getFormats( this.props ).datetime ) {
